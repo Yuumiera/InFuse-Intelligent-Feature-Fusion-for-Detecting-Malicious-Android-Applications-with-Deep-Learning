@@ -77,5 +77,3 @@ Simply open `frontend/index.html` in your browser. (The frontend fetches data fr
   }
   ```
 
-## 👨‍💻 Developer
-Developed by [Sıla Akkaya](https://github.com/Yuumiera).
