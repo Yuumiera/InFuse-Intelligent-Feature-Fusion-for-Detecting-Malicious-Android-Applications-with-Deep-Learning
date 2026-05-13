@@ -79,7 +79,7 @@ analyzeBtn.addEventListener('click', async () => {
         
         // Simüle edilmiş bir progress bar/loading efekti hissi için setTimeout kullanılabilir
         // ama fetch asenkron olduğu için direkt atıyoruz.
-        const response = await fetch('/analyze', {
+        const response = await fetch('https://infuse-intelligent-feature-fusion-for.onrender.com/analyze', {
             method: 'POST',
             body: formData
         });
