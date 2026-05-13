@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InFuse | APK Malware Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="scanlines"></div>
+    <div class="container">
+        <header>
+            <h1 class="glitch" data-text="InFuse_Analyzer">InFuse_Analyzer</h1>
+            <p class="subtitle">>> ADVANCED APK MALWARE DETECTION SYSTEM_</p>
+        </header>
+
+        <main>
+            <div class="panel upload-panel">
+                <div class="panel-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="title">TARGET_ACQUISITION</span>
+                </div>
+                <div class="panel-content">
+                    <div id="drop-zone" class="drop-zone">
+                        <div class="icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="17 8 12 3 7 8"></polyline>
+                                <line x1="12" y1="3" x2="12" y2="15"></line>
+                            </svg>
+                        </div>
+                        <p id="drop-text">Drag & Drop .APK file here or <span class="highlight">Browse</span></p>
+                        <input type="file" id="file-input" accept=".apk" hidden>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel config-panel">
+                <div class="panel-header">
+                    <span class="title">SYSTEM_CONFIGURATION</span>
+                </div>
+                <div class="panel-content">
+                    <div class="model-selector">
+                        <label class="cyber-radio">
+                            <input type="radio" name="model" value="manifest" checked>
+                            <span class="radio-btn">MANIFEST_MODEL</span>
+                        </label>
+                        <label class="cyber-radio">
+                            <input type="radio" name="model" value="static">
+                            <span class="radio-btn">STATIC_MODEL</span>
+                        </label>
+                        <label class="cyber-radio">
+                            <input type="radio" name="model" value="fusion">
+                            <span class="radio-btn">FUSION_MODEL</span>
+                        </label>
+                    </div>
+                    <button id="analyze-btn" class="cyber-button" disabled>
+                        <span>INITIATE_SCAN</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="panel console-panel">
+                <div class="panel-header">
+                    <span class="title">TERMINAL_OUTPUT</span>
+                </div>
+                <div class="panel-content terminal">
+                    <div id="terminal-content">
+                        <div class="log">System initialized. Awaiting target...</div>
+                    </div>
+                    <span class="cursor">_</span>
+                </div>
+            </div>
+
+            <div id="result-panel" class="panel result-panel hidden">
+                <div class="panel-header">
+                    <span class="title">ANALYSIS_REPORT</span>
+                </div>
+                <div class="panel-content">
+                    <div class="result-display">
+                        <h2 id="result-status" class="status-text">--</h2>
+                        <div class="confidence-bar">
+                            <div id="confidence-fill" class="fill"></div>
+                        </div>
+                        <p id="confidence-text">Confidence: <span class="value">0%</span></p>
+                        <p id="details-text" class="details"></p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

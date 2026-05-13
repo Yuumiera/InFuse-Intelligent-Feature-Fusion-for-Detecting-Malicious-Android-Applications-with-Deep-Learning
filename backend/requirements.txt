@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+python-multipart
+pandas
+numpy
+androguard
+torch
+scikit-learn
+joblib
