@@ -18,7 +18,7 @@
 With its cyberpunk-inspired, interactive frontend and a robust FastAPI backend powered by PyTorch, InFuse provides real-time malware analysis and confidence scoring.
 
 ## 🚀 Live Demo
-- **Frontend (UI):** [Click Here to View Live (Vercel)](#) *(Not: Buraya kendi Vercel linkini eklemelisin)*
+- **Frontend (UI):** [Click Here to View Live (Vercel)](https://in-fuse-intelligent-feature-fusion.vercel.app/)
 - **Backend API:** [Hosted on Render](https://infuse-intelligent-feature-fusion-for.onrender.com)
 
 ## 🧠 Deep Learning Models
